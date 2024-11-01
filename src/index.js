@@ -8,6 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <div> Successfully deployed through GitHub Workflow using npm install, build and test </div>
   </React.StrictMode>
 );
 
