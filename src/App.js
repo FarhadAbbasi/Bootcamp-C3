@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './Hello';
 
-function App() {
+
+// const Hello = ({props}) => "Hello World" +props.name ; 
+
+function App(props) {
+
+//  let name = user.name;
+//  let age = user.age;
+
+  let {name, age, IsReactDev, level} = props ;
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <br/> <div> Successfully deployed react-app through GitHub Workflow using npm install, build and test ~ Farhad </div>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        Hello World from App.JS from {name} Age = {age -5}.<br/> He is a {IsReactDev} react developer. Okay, So his level is beginner = {level.beginner}.
+        <div> Another Tree 
+          <br/> <Hello fname= {name}></Hello>
+        </div>
+
+    </div>       // We can have only 1x element (<div>) in this function as we have to 'return' single element (JS XML) at the end.
+                 // Yet we can have a Tree i.e. multiple elements inside the 'main' element (component).
   );
 }
 
