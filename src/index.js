@@ -10,10 +10,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
       <div>
         <App 
-        name="Farhad" 
+        name= "Farhad Ali," 
         age={29} 
         IsReactDev= {true} 
-        level={{beginner: "yes", expert: "no"}}
+        level= "beginner"
         />
         </div>  
   ); 

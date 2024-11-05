@@ -14,7 +14,7 @@ function App(props) {
   
   return (
     <div className="App">
-        Hello World from App.JS from {name} Age = {age -5}.<br/> He is a {IsReactDev} react developer. Okay, So his level is beginner = {level.beginner}.
+        Hello World from App.JS from {name} Age = {age -5}.<br/> He is a {IsReactDev} react developer. Okay, So his level is  = {level}.
         <div> Another Tree 
           <br/> <Hello fname= {name}></Hello>
         </div>
